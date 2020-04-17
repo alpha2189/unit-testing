@@ -1,0 +1,33 @@
+package intrasofttest;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.Assert;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertTrue;
+
+class untiTesting1 {
+ junitTest main12;
+ 
+	@BeforeEach
+	void setUp() throws Exception {
+		main12 = new junitTest();
+	}
+
+	@SuppressWarnings("deprecation")
+	@Test
+	void test() {
+		double result = -1;	//Here it shows what is the correct average result, so if number1 and number2 are 5,6 the 
+								         //correct average number is 5.5 the test case is correct.
+							         	// If number1 is 6 and number2 is6 then the test will not pass  because the result 
+							        	//5.5 is not correct.
+		
+								       //if number1 is 0 or negative and number2 is 0 or negative then the correct answer
+								       //in order for the test to pass is -1, so if we put in the result -1 the test passes
+		
+		Assert.assertTrue(result== main12.countAverage(-5,63)); /// Here are the numbers (number1, number2)
+		
+	}
+
+}
