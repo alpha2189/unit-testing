@@ -1,0 +1,20 @@
+package intrasofttest;
+
+public class junitTest {
+	
+	public double countAverage(double number1, double number2) {
+        double ans = -1; // if conditions are not valid the program returns -1.
+        if((number1 > 0) && (number2 >0))
+        {
+            double Sum = number1 + number2;
+
+            //System.out.println("The total sum of the numbers is " + Sum);
+             ans = Sum / 2;
+            //System.out.println("The Average of the numbers is " + AVG);
+          
+        }
+       
+        return ans; /// Returns ans - Where ans is the Average
+    }
+
+}
